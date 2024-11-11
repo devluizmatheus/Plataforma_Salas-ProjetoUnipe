@@ -1,0 +1,54 @@
+# Diretórios de dependências do Node.js
+/node_modules/
+
+# Dependências do Composer (PHP)
+/vendor/
+
+# Diretórios e arquivos de build
+/build/
+/dist/
+
+# Diretórios e arquivos de cache de frameworks
+/cache/
+*.log
+
+# Arquivos temporários de editores (como vim ou outros editores de texto)
+*.swp
+*.swo
+*~
+
+# Arquivos específicos de sistema operacional
+.DS_Store        # macOS
+Thumbs.db        # Windows
+
+# Arquivos de configuração da IDE (como VSCode, IntelliJ, etc.)
+.idea/
+.vscode/
+
+# Arquivos de ambiente (contêm variáveis sensíveis como chaves de API)
+.env
+.env.local
+.env.*.local
+
+# Arquivos temporários ou de backup
+*.bak
+*.tmp
+*.orig
+
+# Arquivos de cache do navegador
+.cache/
+
+# Logs
+*.log
+
+# Arquivos de pacotes (se você estiver distribuindo com o Composer ou NPM)
+*.tar.gz
+*.tar
+*.zip
+*.tar.bz2
+*.tar.xz
+
+# Arquivos específicos de dependências (se houver)
+package-lock.json
+yarn.lock
+composer.lock
