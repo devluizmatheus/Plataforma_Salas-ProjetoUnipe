@@ -1,37 +1,43 @@
 <?php
 
-    //print_r($_REQUEST);
-    if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) 
-    {
-        //acessa
-        include_once('/PHP/config.php');
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
 
-        //print_r('Email: ' . $email);
-        //print_r('<br>');
-        //print_r('Senha: ' . $senha);
+    include_once('config.php');
 
-        $sql = "SELECT * FROM usurios WHERE email = '$email' and senha = '$senha'";
 
-        $result = $conexao->query($sql);
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-        //print_r($sql);
-        //print_r($result);
+    
+    $stmt = $conexao->prepare("SELECT * FROM usuarios WHERE email = ? AND senha = ?");
+    
+    
+    if ($stmt) {
+        
+        $stmt->bind_param("ss", $email, $senha);
+        
 
-        if(mysqli_num_rows($result) < 1)
-        {
-            header('Location: /PHP/login.php');
+        $stmt->execute();
+        
+
+        $result = $stmt->get_result();
+
+
+        if ($result->num_rows < 1) {
+            header('Location: login.php');
+            exit();
+        } else {
+            header('Location: sistema.php');
+            exit();
         }
-        else
-        {
-            header('Location: /PHP/sistema.php');
-        }
-
+        
+        $stmt->close();
+    } else {
+        die("Erro na preparação da consulta: " . $conexao->error);
     }
-    else
-    {
-        header('Location: /PHP/login.php');
-    }
+} else {
+    header('Location: login.php');
+    exit();
+}
 
 ?>
