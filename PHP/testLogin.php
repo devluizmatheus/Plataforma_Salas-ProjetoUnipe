@@ -4,7 +4,7 @@
     if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) 
     {
         //acessa
-        include_once('config.php');
+        include_once('/PHP/config.php');
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
@@ -21,17 +21,17 @@
 
         if(mysqli_num_rows($result) < 1)
         {
-            header('Location: login.php');
+            header('Location: /PHP/login.php');
         }
         else
         {
-            header('Location: sistema.php');
+            header('Location: /PHP/sistema.php');
         }
 
     }
     else
     {
-        header('Location: login.php');
+        header('Location: /PHP/login.php');
     }
 
 ?>
