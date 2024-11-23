@@ -9,8 +9,8 @@
     <h1>Seja Bem Vindo!</h1>
     <h2>Faça sua reserva. Priorize sua privacidade e seu conforto!</h2>
     <div class="box">
-        <a href="/PHP/login.php">Login</a>
-        <a href="/PHP/formulario.php">Cadastre-se</a>
+        <a href="login.php">Login</a>
+        <a href="formulario.php">Cadastre-se</a>
     </div>
 </body>
 </html>
