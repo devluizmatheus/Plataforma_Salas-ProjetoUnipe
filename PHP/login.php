@@ -6,16 +6,16 @@
     <title>Login | PS</title>
 </head>
 <body>
-    <a href="/PHP/home.php">Voltar</a>
+    <a href="home.php">Voltar</a>
     <div>
         <h1>Login</h1>
-        <form action="/PHP/testLogin.php" method="POST">
-            <input type="text" name="email" placeholder="Email">
+        <form action="testLogin.php" method="POST">
+            <input type="text" name="email" placeholder="Email" required>
             <br><br>
-            <input type="password" naame="senha" placeholder="Senha">
+            <input type="password" name="senha" placeholder="Senha" required>
             <br><br>
             <input type="submit" name="submit" value="Enviar">
-            </form>
+        </form>
     </div>
 </body>
 </html>
