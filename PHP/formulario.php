@@ -3,7 +3,7 @@
     if(isset($_POST['submit']))
     {
 
-        include_once('/PHP/config.php');
+        include_once('config.php');
 
         $nome = $_POST['nome'];
         $email = $_POST['email'];
@@ -22,16 +22,17 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórmulario | PS</title>
+    <link rel="stylesheet" href="/freture/css/formulario.css" />
 </head>
 <body>
-    <a href="/PHP/home.php">Voltar</a>
+    <a href="home.php">Voltar</a>
     <div class="box">
-        <form action="/PHP/formulario.php" method="POST">
+        <form action="formulario.php" method="POST">
             <fieldset>
                 <legend><b>Fórmulario de Clientes</b></legend>
                 <br>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SITE | PS</title>
+    <link rel="stylesheet" href="/freture/css/home.css" />
 </head>
 <body>
     <h1>Seja Bem Vindo!</h1>
