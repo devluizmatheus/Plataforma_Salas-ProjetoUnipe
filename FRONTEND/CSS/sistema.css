@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #b3b4ba;  /* Cor de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header .logo h1 {
+    font-size: 250%;
+    color: #000000;
+}
+
+.hero {
+    background-color: #e2e2df;
+    padding: 50px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    color: #131212;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    color: #3f3f3f;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 1em;
+    color: #3f3f3f;
+    margin-bottom: 30px;
+}
+
+.hero form button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #555555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero form button:hover {
+    background-color: #202020;
+    transform: translateY(-5px);
+}
+
+.destaque {
+    background-color: #e2e2df;
+    padding: 50px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 520px;
+    color: #131212;
+    margin-top: 40px;
+}
+
+.destaque h3 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.destaque .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.destaque .features div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.destaque .features h4 {
+    font-size: 1.2em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.destaque .features p {
+    font-size: 1em;
+    color: #3f3f3f;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .destaque {
+        padding: 30px 40px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .hero h2, .destaque h3 {
+        font-size: 1.2em;
+    }
+
+    .destaque .features {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .destaque .features div {
+        width: 100%;
+    }
+}
