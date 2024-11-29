@@ -1,0 +1,8 @@
+CREATE DATABASE plataforma_salas;
+CREATE TABLE events(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    cor VARCHAR(100),
+    start DATETIME,
+    end DATETIME
+)

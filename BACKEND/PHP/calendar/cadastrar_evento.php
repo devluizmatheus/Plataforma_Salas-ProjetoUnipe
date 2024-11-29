@@ -3,21 +3,6 @@
 // Incluir o arquivo com a conexão com banco de dados
 include_once './conexao.php';
 
-// Receber os dados do formulário
-$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-
-// // Verifique os dados recebidos
-// var_dump($dados); // Exibe os dados recebidos no formato array
-
-// // Verifique se há algum valor de dados não recebido corretamente
-// if ($dados === null || empty($dados['cad_title']) || empty($dados['cad_start']) || empty($dados['cad_end'])) {
-//     echo json_encode(['status' => false, 'msg' => 'Dados não recebidos corretamente!']);
-//     exit;
-// }
-
-// Continue com o resto do código para inserir no banco de dados
-
-
 // Receber os dados enviado pelo JavaScript
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 

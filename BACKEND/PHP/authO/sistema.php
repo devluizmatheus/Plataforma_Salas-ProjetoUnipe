@@ -17,7 +17,7 @@
         <div class="hero-content">
             <h2>Encontre o espaço perfeito para suas reuniões e eventos!</h2>
             <p>Salas equipadas e disponíveis para reservas de forma rápida e fácil.</p>
-            <form action="\stars\Plataforma_Salas-ProjetoUnipe\BACKEND\PHP\calendar\index.php" method="GET">
+            <form action="../../../BACKEND/PHP/calendar/index.php" method="GET">
                 <button type="submit">Buscar Salas</button>
             </form>
         </div>
